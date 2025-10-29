@@ -16,8 +16,8 @@ document.addEventListener('click', (e) => {
   const posX = e.clientX - rect.left - border;
   const posY = e.clientY - rect.top - border;
 
-  const x = posX - spider.offsetWidth;
-  const y = posY - spider.offsetHeight;
+  const x = posX - spider.offsetWidth / 2;
+  const y = posY - spider.offsetHeight / 2;
 
   const maxX = wall.clientWidth - spider.offsetWidth;
   const maxY = wall.clientHeight - spider.offsetHeight;
